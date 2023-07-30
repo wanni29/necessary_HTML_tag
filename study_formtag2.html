@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- text: 일반적인 텍스트 입력받을수 있음-->
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+
+    <!-- password : 비밀번호를 입력받을수 있음, 가려짐-->
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+
+    <!-- number : 숫자를 입력받을수 있음, 단 숫자만 가능-->
+    <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+    </div>
+
+    <!-- tel :  전화 번호 입력받을수 있음-->
+    <div>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <!-- url : 웹주소 입력 받을수 있음-->
+    <div>
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website" required>
+    </div>
+
+    <!-- checkbox : 하나 이상의 선택사항을 체크할수있음-->
+    <div>
+        <label for="option1">Option 1:</label>
+        <input type="checkbox" id="option1" name="option1" value="1">
+        <label for="option2">Option 2:</label>
+        <input type="checkbox" id="option2" name="option2" value="2">
+    </div>
+
+    <!-- radio : 라디오 버튼-->
+    <div>
+        <label for="gender-male">Male:</label>
+        <input type="radio" id="gender-male" name="gender" value="male" required>
+        <label for="gender-female">Female:</label>
+        <input type="radio" id="gender-female" name="gender" value="female" required>
+    </div>
+
+
+    <!-- file : 파일 선택할수있는 업로드 필드-->
+    <div>
+        <label for="file">Select a file:</label>
+        <input type="file" id="file" name="file" accept=".jpg, .png, .pdf" required>
+    </div>
+
+    <!-- submit : 폼을 제출하는 버튼, 폼의 내용을 서버로 전송-->
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+
+    <!-- reset : 폼의 내용을  초기화 하는 버튼, 입력된 내용을 초기화 시킴-->
+    <div>
+        <input type="reset" value="Reset">
+    </div>
+
+    <!-- button : 클릭이벤트를 처리하기 위한 버튼-->
+    <div>
+        <button type="button" onclick="alert('Button Clicked!')">Click Me</button>
+    </div>
+
+    <!-- date : 날짜를 선택할수있는 입력 필드-->
+    <div>
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+    </div>
+
+    <!-- time : 시간을 선택할수있는 입력 필드-->
+    <div>
+        <label for="meeting-time">Meeting Time:</label>
+        <input type="time" id="meeting-time" name="meeting-time" required>
+    </div>
+    
+    <!-- color :  색상을 선택할수있는 입력 필드-->
+    <div>
+        <label for="fav-color">Favorite Color:</label>
+        <input type="color" id="fav-color" name="fav-color" value="#ff0000">
+    </div>
+    
+    <!-- range : 숫자 범위를 선택할수있는 슬라이더 형태의 입력 필드-->
+    <div>
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" step="1">
+    </div>
+    
+    <!-- hidden : 사용자에게 보이지 않고, 서버로 데이터를 전송할 목적으로 사용되는 숨겨진 필드-->
+    <div>
+        <input type="hidden" name="session-id" value="ABC123XYZ">
+    </div>
+
+
+</body>
+
+</html>
